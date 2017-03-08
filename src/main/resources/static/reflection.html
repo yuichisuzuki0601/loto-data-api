@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>loto-data-api-refrection-test</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<input type="number" id="time" value="1150" />
+	<div id="result"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+	$('#time').on('change', function() {
+		$.ajax({
+			type : 'GET',
+			url : 'test/reflection-specify?time=' + $('#time').val(),
+		}).done(function(data) {
+			$('#result').html(data);
+		});
+	});
+</script>
+</html>

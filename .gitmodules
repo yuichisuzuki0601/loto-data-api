@@ -1,0 +1,6 @@
+[submodule "lite-db"]
+	path = lite-db
+	url = https://github.com/yuichisuzuki0601/lite-db.git
+[submodule "loto-data"]
+        path = loto-data
+        url = https://github.com/yuichisuzuki0601/loto-data.git

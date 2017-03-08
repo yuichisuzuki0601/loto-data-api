@@ -1,0 +1,64 @@
+{
+	"name" : "loto_six_data",
+	"columns" : [{
+		"name" : "time",
+		"type" : "INT(5) PRIMARY KEY NOT NULL"
+	}, {
+		"name" : "date",
+		"type" : "DATE NOT NULL"
+	}, {
+		"name" : "one",
+		"type" : "INT(2) NOT NULL"
+	}, {
+		"name" : "two",
+		"type" : "INT(2) NOT NULL"
+	}, {
+		"name" : "three",
+		"type" : "INT(2) NOT NULL"
+	}, {
+		"name" : "four",
+		"type" : "INT(2) NOT NULL"
+	}, {
+		"name" : "five",
+		"type" : "INT(2) NOT NULL"
+	}, {
+		"name" : "six",
+		"type" : "INT(2) NOT NULL"
+	}, {
+		"name" : "bonus",
+		"type" : "INT(2) NOT NULL"
+	}, {
+		"name" : "first_unit",
+		"type" : "INT(10)"
+	}, {
+		"name" : "first_price",
+		"type" : "INT(10)"
+	}, {
+		"name" : "second_unit",
+		"type" : "INT(10)"
+	}, {
+		"name" : "second_price",
+		"type" : "INT(10)"
+	}, {
+		"name" : "third_unit",
+		"type" : "INT(10)"
+	}, {
+		"name" : "third_price",
+		"type" : "INT(10)"
+	}, {
+		"name" : "fourth_unit",
+		"type" : "INT(10)"
+	}, {
+		"name" : "fourth_price",
+		"type" : "INT(10)"
+	}, {
+		"name" : "fifth_unit",
+		"type" : "INT(10)"
+	}, {
+		"name" : "fifth_price",
+		"type" : "INT(10)"
+	}, {
+		"name" : "carry_over",
+		"type" : "INT(10)"
+	}]
+}

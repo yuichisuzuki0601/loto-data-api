@@ -1,0 +1,9 @@
+server.port=443
+
+#server.ssl.key-store=keystore.p12
+#server.ssl.key-store-password=***password***
+#server.ssl.keyStoreType=PKCS12
+#server.ssl.keyAlias=tomcat
+
+line.bot.channelSecret=***secret***
+line.bot.channelToken=***token***
