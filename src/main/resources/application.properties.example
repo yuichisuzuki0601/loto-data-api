@@ -1,4 +1,5 @@
 server.port=443
+spring.h2.console.enabled=false
 
 #server.ssl.key-store=keystore.p12
 #server.ssl.key-store-password=***password***

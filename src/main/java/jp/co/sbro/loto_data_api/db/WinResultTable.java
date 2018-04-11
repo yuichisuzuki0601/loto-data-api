@@ -1,6 +1,7 @@
 package jp.co.sbro.loto_data_api.db;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 import jp.co.sbro.lite_db.Table;
@@ -99,6 +100,16 @@ public class WinResultTable {
 			repos.put(time, r);
 		}
 		return repos;
+	}
+
+	public int selectLatestTime() {
+		StringBuilder sql = new StringBuilder(" select max(time) as time from ").append(table.getName());
+		List<Map<String, Object>> results = table.select(sql.toString());
+		int result = 0;
+		if (!results.isEmpty()) {
+			result = Integer.parseInt(results.get(0).get("time").toString());
+		}
+		return result;
 	}
 
 }

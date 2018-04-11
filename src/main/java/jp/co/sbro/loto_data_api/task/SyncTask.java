@@ -25,7 +25,9 @@ public final class SyncTask extends TimerTask {
 	}
 
 	public synchronized void sync() throws Exception {
-		WinResultTable.getInstance().insert(new Scraper().getWinResultRepository());
+		WinResultTable table = WinResultTable.getInstance() ;
+		int fromTime = table.selectLatestTime() + 1;
+		table.insert(new Scraper(fromTime).getWinResultRepository());
 		System.out.println(DF.format(new Date()) + "  synced!!");
 	}
 
